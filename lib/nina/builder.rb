@@ -48,6 +48,13 @@ module Nina
       copy
     end
 
+    def enrich(target, &block)
+      initialization = Builder::Initialization.new(self)
+      yield initialization if block
+
+      Nina.enrich(initialization.to_h, target)
+    end
+
     def nest(delegate: false, &block)
       initialization = Builder::Initialization.new(self)
       yield initialization if block

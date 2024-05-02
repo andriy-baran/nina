@@ -1,10 +1,13 @@
 # Nina
 
+
+
 [![Gem Version](https://badge.fury.io/rb/nina.svg)](https://badge.fury.io/rb/nina)
 [![Maintainability](https://api.codeclimate.com/v1/badges/435ee6e0ae846e9deb88/maintainability)](https://codeclimate.com/github/andriy-baran/nina/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/435ee6e0ae846e9deb88/test_coverage)](https://codeclimate.com/github/andriy-baran/nina/test_coverage)
 
-DSL for simplifying complex objects compositions. Also it reduce biolerplate code when you need to create complex OOD compositions. It's based on https://github.com/andriy-baran/toritori so please check it first
+A tool that helps implement the Builder pattern in your code in more deleclarative way.
+https://github.com/andriy-baran/toritori
 
 ## Installation
 
@@ -49,9 +52,9 @@ Each builder has three factories: params, query, and command. Please check https
 
 With this setup we are able to compose objects in two different ways. Taking the definition block as an ordered list we can traverse it `top->bottom` or `bottom->top` connecting objects at each step
 
-Wrapping 
+Wrapping
 ![](https://github.com/andriy-baran/nina/blob/master/assets/wrap.gif?raw=true)
-Nesting 
+Nesting
 ![](https://github.com/andriy-baran/nina/blob/master/assets/nest.gif?raw=true)
 Lets explore what we have as a result
 ```ruby

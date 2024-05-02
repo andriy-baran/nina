@@ -80,4 +80,11 @@ module Nina
       object
     end
   end
+
+  def self.enrich(build, target)
+    build.each do |name, object|
+      target.define_singleton_method(name) { object }
+    end
+    target
+  end
 end
